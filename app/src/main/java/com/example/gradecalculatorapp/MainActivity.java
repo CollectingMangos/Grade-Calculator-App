@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         englishScoreEditText = findViewById(R.id.englishScoreEditText);
         resultTextView = findViewById(R.id.resultTextView);
         Button calculateButton = findViewById(R.id.calculateButton);
-
         calculateButton.setOnClickListener(v -> calculateGrade());
     }
 
@@ -37,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         String englishScoreStr = englishScoreEditText.getText().toString();
 
         if (studentName.isEmpty() || mathScoreStr.isEmpty() || scienceScoreStr.isEmpty() || englishScoreStr.isEmpty()) {
-            resultTextView.setText("Please fill in all fields.");
+            resultTextView.setText("Please fill in ALL fields!");
             return;
         }
 
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             grade = "F";
         }
 
-        String result = "Student: " + studentName + "\nAverage: " + average + "\nGrade: " + grade;
+        String result = "Name: " + studentName + "\nAverage Score: " + average + "\nGrade: " + grade;
         resultTextView.setText(result);
     }
 }

@@ -13,6 +13,7 @@
         android:text="Student's Name"
         android:textSize="15sp"
         android:paddingLeft="5sp"
+        android:paddingTop="10sp"
         tools:ignore="TextSizeCheck" />
 
     <EditText
@@ -29,6 +30,7 @@
         android:text="Math Score"
         android:textSize="15sp"
         android:paddingLeft="5sp"
+        android:paddingTop="10sp"
         tools:ignore="TextSizeCheck" />
 
     <EditText
@@ -46,6 +48,7 @@
         android:text="Science Score"
         android:textSize="15sp"
         android:paddingLeft="5sp"
+        android:paddingTop="10sp"
         tools:ignore="TextSizeCheck" />
 
     <EditText
@@ -63,6 +66,7 @@
         android:text="English Score"
         android:textSize="15sp"
         android:paddingLeft="5sp"
+        android:paddingTop="10sp"
         tools:ignore="TextSizeCheck" />
 
     <EditText
@@ -77,6 +81,7 @@
         android:id="@+id/calculateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF5B00"
         android:text="Calculate Average" />
 
     <TextView
